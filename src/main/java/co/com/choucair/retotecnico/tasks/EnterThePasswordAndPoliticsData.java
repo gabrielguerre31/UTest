@@ -10,15 +10,15 @@ import net.serenitybdd.screenplay.actions.Enter;
 import static co.com.choucair.retotecnico.userinterface.EnterPasswordAndPoliticsDataPage.*;
 
 
-public class EnterPasswordAndPoliticsData implements Task {
+public class EnterThePasswordAndPoliticsData implements Task {
     UTestUserData uTestUserData;
 
-    public EnterPasswordAndPoliticsData(UTestUserData uTestUserData) {
+    public EnterThePasswordAndPoliticsData(UTestUserData uTestUserData) {
         this.uTestUserData = uTestUserData;
     }
 
-    public static EnterPasswordAndPoliticsData onThePageRegisterPasswordData(UTestUserData uTestUserData) {
-        return Tasks.instrumented(EnterPasswordAndPoliticsData.class,uTestUserData);
+    public static EnterThePasswordAndPoliticsData onTheRegistrationPage(UTestUserData uTestUserData) {
+        return Tasks.instrumented(EnterThePasswordAndPoliticsData.class,uTestUserData);
     }
 
     @Override

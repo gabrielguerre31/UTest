@@ -29,10 +29,10 @@ public class RetoTecnicoStepDefinitions {
     @When("^he enters the data on the register page$")
     public void heEntersTheDataOnTheRegisterPage(List<UTestUserData> uTestUserData) {
         theActorInTheSpotlight().attemptsTo(
-                EnterPersonalData.onThePageRegisterPersonalData(uTestUserData.get(0)),
-                EnterAddressData.onThePageRegisterAddressData(uTestUserData.get(0)),
-                EnterDevicesData.onThePageRegisterDevicesData(uTestUserData.get(0)),
-                EnterPasswordAndPoliticsData.onThePageRegisterPasswordData(uTestUserData.get(0)));
+                EnterThePersonalData.onTheRegistrationPage(uTestUserData.get(0)),
+                EnterTheAddressData.onTheRegistrationPage(uTestUserData.get(0)),
+                EnterTheDevicesData.onTheRegistrationPage(uTestUserData.get(0)),
+                EnterThePasswordAndPoliticsData.onTheRegistrationPage(uTestUserData.get(0)));
     }
 
 

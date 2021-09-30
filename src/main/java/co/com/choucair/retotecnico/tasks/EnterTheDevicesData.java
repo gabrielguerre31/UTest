@@ -11,15 +11,15 @@ import org.openqa.selenium.Keys;
 import static co.com.choucair.retotecnico.userinterface.EnterDevicesDataPage.*;
 
 
-public class EnterDevicesData implements Task {
+public class EnterTheDevicesData implements Task {
     UTestUserData uTestUserData;
 
-    public EnterDevicesData(UTestUserData uTestUserData) {
+    public EnterTheDevicesData(UTestUserData uTestUserData) {
         this.uTestUserData = uTestUserData;
     }
 
-    public static  EnterDevicesData onThePageRegisterDevicesData(UTestUserData uTestUserData) {
-        return Tasks.instrumented(EnterDevicesData.class,uTestUserData);
+    public static EnterTheDevicesData onTheRegistrationPage(UTestUserData uTestUserData) {
+        return Tasks.instrumented(EnterTheDevicesData.class,uTestUserData);
     }
 
     @Override
